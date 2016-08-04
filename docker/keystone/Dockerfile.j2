@@ -12,6 +12,8 @@ RUN apt-get install -y --no-install-recommends \
 
 ADD keystone keystone
 
+#test
+
 RUN mv keystone/ keystone-{{ branch }}/ \
     &&  ln -s keystone-{{ branch }} /keystone \
     && useradd --user-group keystone \
